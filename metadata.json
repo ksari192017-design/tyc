@@ -1,0 +1,8 @@
+{
+  "name": "jaishreeram",
+  "description": "A modern EdTech platform powered by Gemini AI for learning, creativity, and career growth.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
