@@ -8,6 +8,7 @@ import { Opportunities } from './components/Opportunities';
 import { Freelancing } from './components/Freelancing';
 import { Webinars } from './components/Webinars';
 import { ResumeBuilder } from './components/ResumeBuilder';
+import { SkillLoop } from './components/SkillLoop';
 import { Navbar } from './components/Navbar';
 import { AppSection } from './types';
 import { Sidebar, SidebarBody, SidebarLink } from './components/ui/sidebar';
@@ -51,6 +52,8 @@ function InnerApp() {
         return <ResumeBuilder />;
       case AppSection.AI_LAB:
         return <AILab />;
+      case AppSection.SKILLLOOP:
+        return <SkillLoop />;
       case AppSection.LOGIN:
         return (
           <div className="flex items-center justify-center min-h-[80vh] bg-slate-50 dark:bg-neutral-900">
@@ -157,6 +160,16 @@ function InnerApp() {
       href: "#",
       icon: <Bot className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />,
       onClick: () => setCurrentSection(AppSection.AI_LAB)
+    },
+    {
+      label: "SkillLoop",
+      href: "#",
+      icon: (
+        <svg className="w-5 h-5 text-neutral-700 dark:text-neutral-200 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+      ),
+      onClick: () => setCurrentSection(AppSection.SKILLLOOP)
     },
   ];
 

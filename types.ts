@@ -53,7 +53,8 @@ export enum AppSection {
   WEBINARS = 'webinars',
   RESUME = 'resume',
   AI_LAB = 'ai_lab',
-  LOGIN = 'login'
+  LOGIN = 'login',
+  SKILLLOOP = 'skillloop'
 }
 
 export type ImageSize = '1K' | '2K' | '4K';
